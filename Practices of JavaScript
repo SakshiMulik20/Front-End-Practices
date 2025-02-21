@@ -1,0 +1,106 @@
+# JavaScript Practice Code Repository
+
+## Introduction
+This repository contains various JavaScript practice codes categorized by different concepts and functionalities. These cover fundamental and intermediate-level JavaScript programming concepts.
+
+## Code Categories
+
+### 1. Object Manipulation
+- Creating and displaying objects.
+- Example:
+  ```javascript
+  const product = {
+      name: "ballpen",
+      ratings: 4,
+      offer: 5,
+      price: 270
+  };
+  console.log(product);
+  ```
+
+### 2. Conditional Statements
+- Checking if a number is even or odd.
+- Checking divisibility by 5.
+- Example:
+  ```javascript
+  let num = 5;
+  if (num % 2 === 0) {
+      console.log("Number is even");
+  } else {
+      console.log("Number is odd");
+  }
+  ```
+
+### 3. Loops and Iterations
+- Sum of numbers from 1 to `n`.
+- Finding even numbers from 0 to 100.
+- Example:
+  ```javascript
+  let sum = 0;
+  for (let num = 1; num <= 10; num++) {
+      sum += num;
+  }
+  console.log("The total sum is:", sum);
+  ```
+
+### 4. Guessing Game
+- Simple guessing game until correct number is guessed.
+- Example:
+  ```javascript
+  let gameNum = 78;
+  let userNum = prompt("Guess the number");
+  while (userNum != gameNum) {
+      userNum = prompt("Wrong guess, try again!");
+  }
+  console.log("Correct! The number is 78.");
+  ```
+
+### 5. String Manipulation
+- Username generator with string length.
+- Example:
+  ```javascript
+  let userName = prompt("Enter your full name");
+  let fullName = '@' + userName + userName.length;
+  console.log("Preferred username:", fullName);
+  ```
+
+### 6. Arrays and Array Operations
+- Finding sum and average of student marks.
+- Applying discounts on prices.
+- Example:
+  ```javascript
+  let marks = [10, 20, 30, 40, 50, 60];
+  let sum = marks.reduce((acc, val) => acc + val, 0);
+  let avg = sum / marks.length;
+  console.log(`Average marks: ${avg}`);
+  ```
+
+### 7. Higher-Order Functions
+- Filtering, mapping, and reducing arrays.
+- Example:
+  ```javascript
+  let numbers = [90, 87, 67, 99, 92, 68];
+  let highMarks = numbers.filter(val => val >= 90);
+  console.log(highMarks);
+  ```
+
+### 8. Arrow Functions
+- Multiplication using arrow functions.
+- Example:
+  ```javascript
+  const multiply = (a, b) => a * b;
+  console.log(multiply(3, 4));
+  ```
+
+### 9. Factorial and Sum using Reduce
+- Sum and factorial calculations using `reduce`.
+- Example:
+  ```javascript
+  let arr = [1, 2, 3, 4, 5];
+  let sum = arr.reduce((acc, val) => acc + val, 0);
+  let factorial = arr.reduce((acc, val) => acc * val, 1);
+  console.log(`Sum: ${sum}, Factorial: ${factorial}`);
+  ```
+
+
+
